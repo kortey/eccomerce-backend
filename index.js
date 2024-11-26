@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 // Middleware
 app.use(cors({
   origin: [
-    'https://ecormerce-frontend.vercel.app/',
+    'https://ecormerce-frontend.vercel.app',
     'http://localhost:3000',
     'https://eccomerce-backend-ep7i.onrender.com'
   ],
