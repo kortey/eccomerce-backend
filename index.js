@@ -12,8 +12,12 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://ecormerce-frontend-git-main-korteys-projects.vercel.app/', // Update this with your frontend domain in production
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  origin: [
+    'https://ecormerce-frontend.vercel.app/',
+    'http://localhost:3000',
+    'https://eccomerce-backend-ep7i.onrender.com'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
